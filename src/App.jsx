@@ -3,7 +3,7 @@ import { Zap, Activity, LayoutGrid, Shield, Settings } from "lucide-react";
 import { useEnergyData } from "./hooks/useEnergyData";
 import { PhaseCard } from "./components/PhaseCard";
 import { PowerChart } from "./components/PowerChart"; // Importe o novo componente
-import { StatusCard } from "./components/StatusCard";
+
 
 // Tema de cores principais (Fases dos Cards e Tensão)
 const VOLTAGE_THEME = { phaseA: "#3B82F6", phaseB: "#F59E0B", phaseC: "#D946EF" };
@@ -35,8 +35,8 @@ export default function App() {
         {/* Header */}
         <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-10 pb-6 border-b border-[#1E2430] gap-4">
           <div>
-            <h1 className="text-3xl font-black text-white tracking-tighter">Energy Core Telemetry</h1>
-            <p className="text-slate-600 text-sm font-medium">Real-time Advanced Power Analytics</p>
+            <h1 className="text-3xl font-black text-white tracking-tighter">ANL Web</h1>
+            <p className="text-slate-600 text-sm font-medium">Embrasul - Soluções Inteligentes</p>
           </div>
           <div className="bg-[#12151C] border border-[#1E2430] px-4 py-2 rounded-full flex items-center gap-2">
              <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
@@ -80,10 +80,7 @@ export default function App() {
             />
           </div>
 
-          {/* Card de Status Lateral (Ocupa 3 de 12 colunas) */}
-          <div className="xl:col-span-3">
-            <StatusCard />
-          </div>
+
         </div>
       </main>
     </div>
